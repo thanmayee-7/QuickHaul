@@ -57,7 +57,7 @@ const startServer = async () => {
     await initSchema();
     await seedDatabase();
 
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`===============================================`);
       console.log(`🚀 QuickHaul Logistics Platform API running`);
       console.log(`📡 URL: http://localhost:${PORT}`);
